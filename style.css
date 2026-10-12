@@ -1,0 +1,489 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --bg-color: #fff5fa;
+    --second-bg-color: #ffe0ec;
+    --text-color: #3d2630;
+    --main-color: #ff69a4;
+    --dark-pink: #e83e7d;
+    --light-pink: #fff0f6;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: auto;
+    padding: 60px 0;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: white;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #ffe5f0;
+}
+
+/* =========================
+   HOME
+========================= */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    background: var(--bg-color);
+}
+
+.home-content {
+    flex: 1;
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 5.5rem;
+    line-height: 1.2;
+    color: var(--main-color);
+}
+
+.home-content span {
+    color: var(--dark-pink);
+}
+
+.home-content p {
+    font-size: 1.7rem;
+    line-height: 1.7;
+    margin: 2rem 0;
+}
+
+/* FOTO DI KANAN */
+.home-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-img img {
+    width: 35vw;
+    height: 35vw;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--main-color);
+    box-shadow: 0 0 30px rgba(255, 105, 164, .5);
+}
+
+/* =========================
+   SOCIAL MEDIA
+========================= */
+.social-media {
+    margin: 2rem 0;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    transition: .3s;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: var(--main-color);
+    color: white;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    box-shadow: 0 0 1rem var(--main-color);
+    transition: .3s;
+}
+
+.btn:hover {
+    background: var(--dark-pink);
+    box-shadow: none;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    background: var(--second-bg-color);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-img img {
+    width: 35vw;
+    height: 35vw;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--main-color);
+}
+
+.heading {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.heading span {
+    color: var(--main-color);
+}
+
+.about-content h2 {
+    text-align: left;
+}
+
+.about-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-content h3 span {
+    color: var(--main-color);
+}
+
+.about-content p {
+    font-size: 1.7rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* =========================
+   SERVICES
+========================= */
+.services {
+    background: var(--bg-color);
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services-box {
+    flex: 1 1 30rem;
+    background: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    transition: .3s;
+}
+
+.services-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 2rem rgba(255, 105, 164, .4);
+}
+
+.services-box i {
+    font-size: 5rem;
+    color: var(--main-color);
+}
+
+.services-box h3 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.services-box p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* =========================
+   TESTIMONIAL
+========================= */
+.testimonial {
+    background: var(--second-bg-color);
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.testimonial-box {
+    flex: 1 1 30rem;
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 2px solid var(--main-color);
+    transition: .3s;
+}
+
+.testimonial-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 2rem rgba(255, 105, 164, .4);
+}
+
+.stars {
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-box p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.testimonial-box h3 {
+    font-size: 2.3rem;
+    color: var(--main-color);
+}
+
+.testimonial-box span {
+    font-size: 1.4rem;
+    color: #777;
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact {
+    background: var(--bg-color);
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    flex: 1;
+}
+
+.input-box {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.input-box input,
+.contact textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: white;
+    border: 2px solid var(--main-color);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact textarea {
+    height: 18rem;
+    resize: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background: var(--main-color);
+    padding: 3rem 9%;
+    text-align: center;
+}
+
+.footer .social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+    margin: 0 .5rem 1.5rem;
+    transition: .3s;
+}
+
+.footer .social a:hover {
+    background: white;
+    color: var(--main-color);
+}
+
+.footer p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem 5%;
+    }
+
+    .navbar a {
+        margin-left: 1rem;
+        font-size: 1.4rem;
+    }
+
+    /* FOTO TETAP DI KANAN */
+    .home {
+        flex-direction: row;
+        gap: 2rem;
+        padding: 10rem 5% 2rem;
+    }
+
+    .home-img {
+        order: 2;
+    }
+
+    .home-content {
+        order: 1;
+    }
+
+    .home-img img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-content p {
+        font-size: 1.4rem;
+    }
+
+    .about {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .about-img img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .input-box {
+        flex-direction: column;
+    }
+}
